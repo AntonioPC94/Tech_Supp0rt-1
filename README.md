@@ -33,11 +33,15 @@ Ahora, si accedemos al directorio "/wordpress/", veremos que se nos abre la sigu
 
 ![TCHSUPP5]()
 
-Analizando la página con Wappalyzer, veremos la siguiente información de la página web:
+Analizando la página con Wappalyzer, veremos la siguiente información sobre ella:
 
 ![TCHSUPP6]()
 
-Si observamos el contenido de la página, veremos que un usuario ha realizado una publicación llamada "Hello World". Bien, ahora vamos a utilizar la herramienta "WP-Scan" para sacar toda la información que podamos de dicha página web y ver si existen más usuarios aparte del que ya hemos encontrado:
+Si observamos el contenido de la página, veremos que en el apartado "BLOG", un usuario ha realizado una publicación llamada "Hello World". Bien, ahora vamos a utilizar la herramienta "WP-Scan" para sacar toda la información que podamos de dicha página web y ver si existen, entre otras cosas, más usuarios aparte del que ya hemos encontrado:
+
+- Listamos los usuarios:
+
+![TCHSUPP7]()
 
 
 
