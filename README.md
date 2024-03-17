@@ -25,7 +25,7 @@ En el "http-enum", veremos que existen 3 directorios que pueden ser de interés:
 - /phpinfo.php
 - /wordpress/wp.login.php
 
-Los analizamos y después de haber accedido a cada uno de ellos, vemos que en el tercero efectivamente aparece un login de WordPress.
+Los analizamos y después de haber accedido a cada uno de ellos, vemos que en el tercero hay un login de WordPress.
 
 ![TCHSUPP4](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/1d634cc0db32dfb86052946b2c31ae495d962246/img/TCHSUPP4.png)
 
