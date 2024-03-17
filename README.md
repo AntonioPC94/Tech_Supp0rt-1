@@ -43,6 +43,8 @@ Si observamos el contenido de la página, veremos que en el apartado "BLOG", un 
 
 ![TCHSUPP7](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/1d634cc0db32dfb86052946b2c31ae495d962246/img/TCHSUPP7.png)
 
+Como se observa en la imagen anterior, solo existe un usuario registrado en la BDD de la página web. La orden utilizada muestra más resultados, pero ninguno es relevante a simple vista.
+
 Bien, ahora vamos a irnos con el servicio SMB que está en el puerto 445 de la máquina objetivo. Lo primero que haremos, será listar los recursos compartidos que tiene el servidor SMB, a ver si encontramos algo que nos pueda interesar.
 
 ![TCHSUPP8]
