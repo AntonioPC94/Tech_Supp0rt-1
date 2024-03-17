@@ -43,6 +43,8 @@ Si observamos el contenido de la página, veremos que en el apartado "BLOG", un 
 
 ![TCHSUPP7]()
 
+A continuación, vamos a usar WPScan para hacer fuerza bruta a la página de WordPress y poder sacar así la contraseña de dicho usuario.
+
 
 
 
