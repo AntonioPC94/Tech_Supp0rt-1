@@ -47,25 +47,25 @@ Como se observa en la imagen anterior, solo existe un usuario registrado en la B
 
 Bien, ahora vamos a irnos con el servicio SMB que está en el puerto 445 de la máquina objetivo. Lo primero que haremos, será listar los recursos compartidos que tiene el servidor SMB, a ver si encontramos algo que nos pueda interesar.
 
-![TCHSUPP8]
+![TCHSUPP8](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/55e9009fd6049e4bab18a289504ca8550cb14897/img/TCHSUPP8.png)
 
 Como vemos en la imagen anterior, existen 2 directorios dentro del servidor que posiblemente contengan información relevante.
 
-A continuación, vamos a intentar acceder como usuario "Anónimo" al servidor lanzando el siguiente comando:
+A continuación, vamos a intentar acceder como usuario "Anónimo" a la segunda carpeta mostrada en la imagen anterior lanzando el siguiente comando:
 
-![TCHSUPP9]
+![TCHSUPP9](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/55e9009fd6049e4bab18a289504ca8550cb14897/img/TCHSUPP9.png)
 
 Con un poco de lógica, podremos deducir que la contraseña para acceder como usuario "Anónimo", es a*********.
 
 Una vez dentro, listamos el contenido del directorio "websvr".
 
-![TCHSUPP10]
+![TCHSUPP10](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/55e9009fd6049e4bab18a289504ca8550cb14897/img/TCHSUPP10.png)
 
 Como se observa en la imagen anterior, vemos que existe un fichero ".txt" que es posible que contenga información relevante para nosotros, así que nos lo vamos a descargar del servidor y vamos a mostrar su contenido:
 
-![TCHSUPP11]
+![TCHSUPP11](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/55e9009fd6049e4bab18a289504ca8550cb14897/img/TCHSUPP11.png)
 
-![TCHSUPP12]
+![TCHSUPP12](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/55e9009fd6049e4bab18a289504ca8550cb14897/img/TCHSUPP12.png)
 
 En la imagen anterior se muestran unas credenciales de una página web llamada "Subrion", de la cual no sabemos nada todavía.
 
@@ -75,15 +75,15 @@ Para crackear el hash obtenido, nos iremos a CyberChef y lo colocaremos en el ap
 
 Una vez crackeado, le daremos a la varita mágica en el "Output" y veremos la contraseña del usuario "admin" en claro.
 
-![TCHSUPP13]
+![TCHSUPP13](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/55e9009fd6049e4bab18a289504ca8550cb14897/img/TCHSUPP13.png)
 
 Como no tenemos mucha idea de qué es Subrion, vamos a informarnos por internet sobre dicha página y vamos a ver si podemos acceder al panel de administración de la misma.
 
-![TCHSUPP14]
+![TCHSUPP14](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/55e9009fd6049e4bab18a289504ca8550cb14897/img/TCHSUPP14.png)
 
 Como vemos en la imagen anterior, Subrion es un CMS de código abierto. Haciéndole una consulta a ChatGPT, este nos indica que para acceder al panel de control de dicho CMS, tendremos que poner en la barra de direcciones: http://(DirecciónIP)/subrion/panel/.
 
-![TCHSUPP15]
+![TCHSUPP15](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/55e9009fd6049e4bab18a289504ca8550cb14897/img/TCHSUPP15.png)
 
 
 
