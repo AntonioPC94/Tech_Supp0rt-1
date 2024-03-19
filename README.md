@@ -81,7 +81,7 @@ Como no tenemos mucha idea de qué es Subrion, vamos a informarnos por internet 
 
 ![TCHSUPP14](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/55e9009fd6049e4bab18a289504ca8550cb14897/img/TCHSUPP14.png)
 
-Como vemos en la imagen anterior, Subrion es un CMS de código abierto. Haciéndole una consulta a ChatGPT, nos indicará que para acceder al panel de control de dicho CMS, tendremos que poner en la barra de direcciones: http://(DirecciónIP)/subrion/panel/.
+Como vemos en la imagen anterior, Subrion es un CMS de código abierto. Haciéndole una consulta a ChatGPT, veremos que para acceder al panel de control de dicho CMS, tendremos que poner en la barra de direcciones: http://(DirecciónIP)/subrion/panel/.
 
 ![TCHSUPP15](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/55e9009fd6049e4bab18a289504ca8550cb14897/img/TCHSUPP15.png)
 
