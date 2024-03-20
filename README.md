@@ -85,13 +85,37 @@ Como vemos en la imagen anterior, Subrion es un CMS de código abierto. Haciénd
 
 ![TCHSUPP15](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/55e9009fd6049e4bab18a289504ca8550cb14897/img/TCHSUPP15.png)
 
+Bien, ahora colocaremos las credenciales que sacamos anteriornmente y accederemos al panel de control del CMS.
 
+![TCHSUPP16]()
 
+Observando la página web, veremos que tiene un apartado para poder subir archivos.
 
+![TCHSUPP17]()
 
+Entonces, lo que vamos a hacer es subir una reverse shell al servidor para poder ganar acceso a la máquina.
 
+Pero antes, tendremos que mirar qué tipo de archivos permite subir el CMS. Para ello, usaremos la extensión Wappalyzer para ver qué información nos arroja sobre la página.
 
+![TCHSUPP18]()
 
+Como se observa en la imagen anterior, la plataforma soporta PHP.
+
+Aparte de lo visto anteriormente, existe también un apartado de la plataforma llamado "PHP Info", el cual nos muestra qué extensiones de archivo soporta el sitio web.
+
+![TCHSUPP19]()
+
+Bien, sabiendo todo esto, vamos a irnos al repositorio de Github de PentestMonkey y vamos a cocinar nuestra "Reverse Shell" antes de subirla al servidor.
+
+Nota: Al intentar subirla en ".php", devuelve un "Forbidden", entonces la vamos a subir en "phar".
+
+Modificamos la IP y el puerto por el que vamos a escuchar para obtener la "Reverse Shell".
+
+![TCHSUPP20]()
+
+Guardamos la configuración y ponemos a escuchar a nuestro equipo en el puerto configurado.
+
+![TCHSUPP21]()
 
 
 
