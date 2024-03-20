@@ -113,10 +113,25 @@ Modificamos la IP y el puerto por el que vamos a escuchar para obtener la "Rever
 
 ![TCHSUPP20]()
 
-Guardamos la configuración y ponemos a escuchar a nuestro equipo en el puerto configurado.
+Guardamos la configuración y en este caso, le pondremos como nombre al fichero "Kinder.php".
+
+Una vez guardado el archivo, le cambiaremos la extensión a ".phar".
+
+Ahora ponemos a escuchar a nuestro equipo en el puerto configurado.
 
 ![TCHSUPP21]()
 
+Subimos el archivo a la plataforma y lo llamamos desde la URL de la página.
+
+![TCHSUPP22]()
+
+En la siguiente imagen, veremos que una vez llamamos al archivo desde la URL, ganamos acceso a la máquina objetivo.
+
+![TCHSUPP23]()
+
+A continuación, upgradearemos la shell para que podamos trabajar más cómodos.
+
+![TCHSUPP24]()
 
 
 
