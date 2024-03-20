@@ -87,23 +87,23 @@ Como vemos en la imagen anterior, Subrion es un CMS de código abierto. Haciénd
 
 Bien, ahora colocaremos las credenciales que sacamos anteriornmente y accederemos al panel de control del CMS.
 
-![TCHSUPP16]()
+![TCHSUPP16](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/4991e55ceab65a6e956a62bde641d5ec1a9bc4e6/img/TCHSUPP16.png)
 
 Observando la página web, veremos que tiene un apartado para poder subir archivos.
 
-![TCHSUPP17]()
+![TCHSUPP17](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/4991e55ceab65a6e956a62bde641d5ec1a9bc4e6/img/TCHSUPP17.png)
 
 Entonces, lo que vamos a hacer es subir una reverse shell al servidor para poder ganar acceso a la máquina.
 
 Pero antes, tendremos que mirar qué tipo de archivos permite subir el CMS. Para ello, usaremos la extensión Wappalyzer para ver qué información nos arroja sobre la página.
 
-![TCHSUPP18]()
+![TCHSUPP18](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/4991e55ceab65a6e956a62bde641d5ec1a9bc4e6/img/TCHSUPP18.png)
 
 Como se observa en la imagen anterior, la plataforma soporta PHP.
 
 Aparte de lo visto anteriormente, existe también un apartado de la plataforma llamado "PHP Info", el cual nos muestra qué extensiones de archivo soporta el sitio web.
 
-![TCHSUPP19]()
+![TCHSUPP19](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/4991e55ceab65a6e956a62bde641d5ec1a9bc4e6/img/TCHSUPP19.png)
 
 Bien, sabiendo todo esto, vamos a irnos al repositorio de Github de PentestMonkey y vamos a cocinar nuestra "Reverse Shell" antes de subirla al servidor.
 
@@ -111,7 +111,7 @@ Nota: Al intentar subirla en ".php", devuelve un "Forbidden", entonces la vamos 
 
 Modificamos la IP y el puerto por el que vamos a escuchar para obtener la "Reverse Shell".
 
-![TCHSUPP20]()
+![TCHSUPP20](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/4991e55ceab65a6e956a62bde641d5ec1a9bc4e6/img/TCHSUPP20.png)
 
 Guardamos la configuración y en este caso, le pondremos como nombre al fichero "Kinder.php".
 
@@ -119,19 +119,19 @@ Una vez guardado el archivo, le cambiaremos la extensión a ".phar".
 
 Ahora ponemos a escuchar a nuestro equipo en el puerto configurado.
 
-![TCHSUPP21]()
+![TCHSUPP21](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/4991e55ceab65a6e956a62bde641d5ec1a9bc4e6/img/TCHSUPP21.png)
 
 Subimos el archivo a la plataforma y lo llamamos desde la URL de la página.
 
-![TCHSUPP22]()
+![TCHSUPP22](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/4991e55ceab65a6e956a62bde641d5ec1a9bc4e6/img/TCHSUPP22.png)
 
 En la siguiente imagen, veremos que una vez llamamos al archivo desde la URL, ganamos acceso a la máquina objetivo.
 
-![TCHSUPP23]()
+![TCHSUPP23](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/4991e55ceab65a6e956a62bde641d5ec1a9bc4e6/img/TCHSUPP23.png)
 
 A continuación, upgradearemos la shell para que podamos trabajar más cómodos.
 
-![TCHSUPP24]()
+![TCHSUPP24](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/4991e55ceab65a6e956a62bde641d5ec1a9bc4e6/img/TCHSUPP24.png)
 
 
 
