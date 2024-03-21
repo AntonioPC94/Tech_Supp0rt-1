@@ -131,7 +131,18 @@ En la siguiente imagen, veremos que una vez llamamos al archivo desde la URL, ga
 
 A continuación, upgradearemos la shell para que podamos trabajar más cómodos.
 
-![TCHSUPP24](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/4991e55ceab65a6e956a62bde641d5ec1a9bc4e6/img/TCHSUPP24.png)
+![TCHSUPP24]()
+
+Ahora que tenemos una shell totalmente interactiva, vamos a dar comienzo a la fase de escalada. Como vimos anteriormente, la máquina contenía una página de WordPress en la cual solo había realizado una publicación el usuario que mencionamos. Ahora bien, ese usuario tiene que estar registrado si o si en la BDD de datos de WordPress.
+
+Entonces, ahora que tenemos acceso a los archivos internos de WordPress, vamos a listar el contenido del fichero "wp-config" a ver si encontramos más información sobre dicho usuario.
+
+![TCHSUPP25]()
+
+Como se observa en la imagen anterior, en el fichero de configuración de WordPress tenemos las credenciales en claro del usuario que encontramos al principio.
+
+Ahora lo que vamos a hacer, es entrar al panel de administración de WordPress para ver si encontramos información que nos permita seguir escalando nuestros privilegios en el sistema objetivo.
+
 
 
 
