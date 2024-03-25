@@ -131,11 +131,11 @@ En la siguiente imagen, veremos que una vez llamamos al archivo desde la URL, ga
 
 A continuación, upgradearemos la shell para que podamos trabajar más cómodos.
 
-![TCHSUPP24]()
+![TCHSUPP24](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/92720bfd7fbdde507df9a46dfe99783d0a86c320/img/TCHSUPP24.png)
 
 Bien, ahora que tenemos una shell totalmente interactiva, lo primero que vamos a hacer, es ver si podemos listar el contenido del fichero "/etc/passwd" para ver qué usuarios existen en el sistema.
 
-![TCHSUPP25]()
+![TCHSUPP25](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/92720bfd7fbdde507df9a46dfe99783d0a86c320/img/TCHSUPP25.png)
 
 Como se observa en la imagen anterior, aparte del usuario "root", existe otro usuario en el sistema objetivo.
 
@@ -143,7 +143,7 @@ Ahora que sabemos lo visto anteriormente, vamos a dar comienzo a la fase de esca
 
 Entonces, ahora que tenemos acceso a los archivos internos de WordPress, vamos a listar el contenido del fichero "wp-config" a ver si encontramos más información sobre dicho usuario.
 
-![TCHSUPP26]()
+![TCHSUPP26](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/92720bfd7fbdde507df9a46dfe99783d0a86c320/img/TCHSUPP26.png)
 
 Como se observa en la imagen anterior, en el fichero de configuración de WordPress tenemos las credenciales en claro del usuario que encontramos al principio.
 
@@ -151,19 +151,19 @@ Tras revisar el panel de administración de WordPress y no haber encontrado info
 
 Para ello, nos abriremos una nueva pestaña en la terminal y nos intentaremos conectar por SSH al usuario mencionado anteriormente.
 
-![TCHSUPP27]()
+![TCHSUPP27](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/92720bfd7fbdde507df9a46dfe99783d0a86c320/img/TCHSUPP27.png)
 
 Como se observa en la imagen anterior, ya estaríamos logueados en el sistema objetivo como el usuario que indicamos anteriormente.
 
 Ahora lo que haremos será utilizar el comando "sudo -l" para ver qué comandos puede utilizar el usuario con privilegios elevados.
 
-![TCHSUPP28]()
+![TCHSUPP28](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/92720bfd7fbdde507df9a46dfe99783d0a86c320/img/TCHSUPP28.png)
 
 Como se observa en la imagen anterior, el usuario puede lanzar el binario "iconv" con privilegios elevados.
 
 A continuación, nos iremos a la página GTFOBins y buscaremos el binario mencionado anteriormente en su buscador para ver si nos devuelve alguna manera de escalar privilegios en el sistema objetivo utilizando dicho binario.
 
-![TCHSUPP29]()
+![TCHSUPP29](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/92720bfd7fbdde507df9a46dfe99783d0a86c320/img/TCHSUPP29.png)
 
 
 La página nos muestra un comando que nos permitirá el archivo que le metamos en la pate de la variable "$LFILE".
@@ -172,7 +172,7 @@ Entonces lo que vamos a hacer, es intentar leer el fichero "root.txt" para que e
 
 Para ello, utilizaremos el siguiente comando: sudo -u root iconv  -f 8859_1 -t 8859_1 "/root/root.txt"
 
-![TCHSUPP30]()
+![TCHSUPP30](https://github.com/AntonioPC94/Tech_Supp0rt-1/blob/92720bfd7fbdde507df9a46dfe99783d0a86c320/img/TCHSUPP30.png)
 
 
 
