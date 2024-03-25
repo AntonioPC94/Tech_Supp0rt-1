@@ -155,9 +155,24 @@ Para ello, nos abriremos una nueva pestaña en la terminal y nos intentaremos co
 
 Como se observa en la imagen anterior, ya estaríamos logueados en el sistema objetivo como el usuario que indicamos anteriormente.
 
+Ahora lo que haremos será utilizar el comando "sudo -l" para ver qué comandos puede utilizar el usuario con privilegios elevados.
+
+![TCHSUPP28]()
+
+Como se observa en la imagen anterior, el usuario puede lanzar el binario "iconv" con privilegios elevados.
+
+A continuación, nos iremos a la página GTFOBins y buscaremos el binario mencionado anteriormente en su buscador para ver si nos devuelve alguna manera de escalar privilegios en el sistema objetivo utilizando dicho binario.
+
+![TCHSUPP29]()
 
 
+La página nos muestra un comando que nos permitirá el archivo que le metamos en la pate de la variable "$LFILE".
 
+Entonces lo que vamos a hacer, es intentar leer el fichero "root.txt" para que el sistema nos devuelva la flag que estamos buscando.
+
+Para ello, utilizaremos el siguiente comando: sudo -u root iconv  -f 8859_1 -t 8859_1 "/root/root.txt"
+
+![TCHSUPP30]()
 
 
 
