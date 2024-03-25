@@ -133,18 +133,27 @@ A continuación, upgradearemos la shell para que podamos trabajar más cómodos.
 
 ![TCHSUPP24]()
 
-Ahora que tenemos una shell totalmente interactiva, vamos a dar comienzo a la fase de escalada. Como vimos anteriormente, la máquina contenía una página de WordPress en la cual solo había realizado una publicación el usuario que mencionamos. Ahora bien, ese usuario tiene que estar registrado si o si en la BDD de datos de WordPress.
-
-Entonces, ahora que tenemos acceso a los archivos internos de WordPress, vamos a listar el contenido del fichero "wp-config" a ver si encontramos más información sobre dicho usuario.
+Bien, ahora que tenemos una shell totalmente interactiva, lo primero que vamos a hacer, es ver si podemos listar el contenido del fichero "/etc/passwd" para ver qué usuarios existen en el sistema.
 
 ![TCHSUPP25]()
 
+Como se observa en la imagen anterior, aparte del usuario "root", existe otro usuario en el sistema objetivo.
+
+Ahora que sabemos lo visto anteriormente, vamos a dar comienzo a la fase de escalada. Como vimos anteriormente, la máquina contenía una página de WordPress en la cual solo había realizado una publicación el usuario que mencionamos. Ahora bien, ese usuario tiene que estar registrado si o si en la BDD de datos de WordPress.
+
+Entonces, ahora que tenemos acceso a los archivos internos de WordPress, vamos a listar el contenido del fichero "wp-config" a ver si encontramos más información sobre dicho usuario.
+
+![TCHSUPP26]()
+
 Como se observa en la imagen anterior, en el fichero de configuración de WordPress tenemos las credenciales en claro del usuario que encontramos al principio.
 
-Ahora lo que vamos a hacer, es entrar al panel de administración de WordPress para ver si encontramos información que nos permita seguir escalando nuestros privilegios en el sistema objetivo.
+Tras revisar el panel de administración de WordPress y no haber encontrado información relevante, lo que vamos a hacer es probar la contraseña que encontramos anteriormente en el fichero de configuración de WordPress con el usuario que nos encontramos en el fichero "/etc/passwd".
 
+Para ello, nos abriremos una nueva pestaña en la terminal y nos intentaremos conectar por SSH al usuario mencionado anteriormente.
 
+![TCHSUPP27]()
 
+Como se observa en la imagen anterior, ya estaríamos logueados en el sistema objetivo como el usuario que indicamos anteriormente.
 
 
 
